@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "@/components/Navbar";
-import { AICopilot } from "@/components/AICopilot";
-import { Footer } from "@/components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -18,9 +15,9 @@ const display = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Paint Line Pro | Premium Painting Across the Southeast",
+  title: "Paint Line Pro | Premium Painting Southeast",
   description:
-    "High-quality interior & exterior painting for apartments, flips, renovations & new construction. Partners with Sherwin-Williams & Benjamin Moore. AI Visualizer + Instant Quotes.",
+    "High-quality painting with AI visualizer and instant quotes. Partners with Sherwin-Williams & Benjamin Moore.",
 };
 
 export default function RootLayout({
@@ -30,12 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${display.variable}`}>
-      <body className="font-sans antialiased min-h-screen flex flex-col">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <AICopilot />
-      </body>
+      <body className="font-sans antialiased">{children}</body>
     </html>
   );
 }
