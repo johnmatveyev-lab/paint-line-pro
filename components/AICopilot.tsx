@@ -37,7 +37,7 @@ export function AICopilot() {
 
     setTimeout(() => {
       let reply =
-        "I'd be happy to help! For the most accurate quote, please use our AI Visualizer or multi-step quote form. You can also schedule a free contractor call.";
+        "I'd be happy to help! For the most accurate estimate, please use our Instant Quote form at /quote. You can also schedule a free contractor call.";
       const lower = text.toLowerCase();
       if (lower.includes("cost") || lower.includes("price") || lower.includes("quote")) {
         reply =
@@ -50,10 +50,10 @@ export function AICopilot() {
           "We cover the entire Southeast — Atlanta, Charlotte, Nashville, Charleston, Miami, Birmingham, Jacksonville, Orlando and more with local partners.";
       } else if (lower.includes("upload") || lower.includes("photo") || lower.includes("visual")) {
         reply =
-          "Yes! Head to the AI Visualizer page to upload photos of your space and see real Sherwin-Williams & Benjamin Moore colors applied instantly.";
+          "You can start an Instant Quote at /quote — share project details there and we'll follow up. Photo visualization is coming soon.";
       } else if (lower.includes("start") || lower.includes("quote") || lower.includes("begin")) {
         reply =
-          "Great! Click 'Get Free Quote' in the nav or go to /quote. It only takes 2 minutes and you'll get an approximate quote + ability to schedule a contractor call.";
+          "Great! Click 'Get Instant Quote' in the nav or go to /quote. It only takes 2 minutes and you'll get an approximate quote + ability to schedule a contractor call.";
       }
       setMessages((m) => [...m, { role: "assistant", text: reply }]);
     }, 600);

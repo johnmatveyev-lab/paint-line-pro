@@ -6,13 +6,6 @@ import { Menu, X, Paintbrush } from "lucide-react";
 import { Button } from "./Button";
 import { cn } from "@/lib/utils";
 
-const links = [
-  { href: "/services", label: "Services" },
-  { href: "/process", label: "Our Process" },
-  { href: "/partners", label: "Partners" },
-  { href: "/visualizer", label: "AI Visualizer" },
-];
-
 export function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -30,17 +23,8 @@ export function Navbar() {
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-navy-700 hover:text-teal-600 font-medium transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
             <Link href="/quote">
-              <Button size="sm">Get Free Quote</Button>
+              <Button size="sm">Get Instant Quote</Button>
             </Link>
           </nav>
 
@@ -61,18 +45,8 @@ export function Navbar() {
         )}
       >
         <div className="px-4 py-4 space-y-3 bg-white/95 backdrop-blur-xl">
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="block py-2 text-navy-800 font-medium"
-              onClick={() => setOpen(false)}
-            >
-              {link.label}
-            </Link>
-          ))}
           <Link href="/quote" onClick={() => setOpen(false)}>
-            <Button className="w-full mt-2">Get Free Quote</Button>
+            <Button className="w-full mt-2">Get Instant Quote</Button>
           </Link>
         </div>
       </div>
