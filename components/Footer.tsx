@@ -22,18 +22,16 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-teal-400">Services</h4>
             <ul className="space-y-2 text-sm text-navy-300">
-              <li><Link href="/services" className="hover:text-white transition">Interior Painting</Link></li>
-              <li><Link href="/services" className="hover:text-white transition">Exterior Painting</Link></li>
-              <li><Link href="/services" className="hover:text-white transition">Commercial</Link></li>
-              <li><Link href="/services" className="hover:text-white transition">New Construction</Link></li>
+              <li>Interior Painting</li>
+              <li>Exterior Painting</li>
+              <li>Commercial</li>
+              <li>New Construction</li>
             </ul>
           </div>
           <div>
             <h4 className="font-semibold mb-4 text-teal-400">Company</h4>
             <ul className="space-y-2 text-sm text-navy-300">
-              <li><Link href="/process" className="hover:text-white transition">Our Process</Link></li>
-              <li><Link href="/partners" className="hover:text-white transition">Partners</Link></li>
-              <li><Link href="/visualizer" className="hover:text-white transition">AI Visualizer</Link></li>
+              <li><Link href="/" className="hover:text-white transition">Home</Link></li>
               <li><Link href="/quote" className="hover:text-white transition">Get a Quote</Link></li>
             </ul>
           </div>
