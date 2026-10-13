@@ -14,3 +14,6 @@ Live: Deployed on Vercel
 ```bash
 npm install && npm run dev
 ```
+
+## Voice agents
+See [docs/VOICE_AGENTS.md](docs/VOICE_AGENTS.md).
