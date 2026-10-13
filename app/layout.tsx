@@ -14,10 +14,21 @@ const display = Plus_Jakarta_Sans({
   display: "swap",
 });
 
+const description =
+  "High-quality residential and commercial painting with fast online quotes. Sherwin-Williams & Benjamin Moore paints.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://paint-line-pro.vercel.app"),
   title: "Paint Line Pro | Premium Painting Southeast",
-  description:
-    "High-quality painting with AI visualizer and instant quotes. Partners with Sherwin-Williams & Benjamin Moore.",
+  description,
+  openGraph: {
+    title: "Paint Line Pro | Premium Painting Southeast",
+    description,
+    url: "/",
+    siteName: "Paint Line Pro",
+    type: "website",
+  },
+  twitter: { card: "summary", title: "Paint Line Pro", description },
 };
 
 export default function RootLayout({

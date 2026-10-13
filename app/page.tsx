@@ -25,7 +25,7 @@ export default function HomePage() {
       <section className="relative min-h-[80vh] flex items-center bg-gradient-to-br from-[#0A1628] to-[#1a2f4a] text-white">
         <div className="max-w-6xl mx-auto px-4 py-20">
           <div className="inline-block bg-[#00C2A8]/20 text-[#00C2A8] text-sm px-3 py-1 rounded-full mb-4">
-            AI-Powered Painting • Southeast US
+            Premium Painting • Southeast US
           </div>
           <h1 className="text-4xl md:text-6xl font-bold leading-tight max-w-2xl">
             Transform Your Vision Into{" "}
@@ -64,12 +64,12 @@ export default function HomePage() {
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-white p-8 rounded-3xl shadow-lg border border-gray-100">
             <div className="w-12 h-12 bg-teal-100 rounded-2xl flex items-center justify-center text-[#00C2A8] font-bold mb-4">
-              AI
+              $
             </div>
-            <h3 className="font-bold text-xl mb-2">AI Visualizer</h3>
+            <h3 className="font-bold text-xl mb-2">Fast Online Quotes</h3>
             <p className="text-gray-600">
-              Upload a photo and instantly see real Sherwin-Williams &amp;
-              Benjamin Moore colors.
+              Tell us about your project in a few steps and request a
+              quote online.
             </p>
           </div>
           <div className="bg-white p-8 rounded-3xl shadow-lg border border-gray-100">
